@@ -585,11 +585,50 @@ img {
     text-align: center;
   }
 
+  .home__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .home__content {
     margin-bottom: 2rem;
+    order: 1; /* Ensure the content comes first */
   }
 
   .home__img {
     justify-content: center;
+    order: 2; /* Ensure the image comes second */
+  }
+
+  .home__img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+  }
+
+  /* Contact Section */
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__content,
+  .contact__info {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .contact__list {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+  }
+
+  .contact__list li {
+    margin-bottom: 1rem;
   }
 }
